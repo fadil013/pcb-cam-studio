@@ -1,0 +1,27 @@
+<UserControl x:Class="PcbCamStudio.UI.Views.Viewport3D"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:h="http://helix-toolkit.org/wpf">
+
+    <Grid Background="#FF111111">
+        <!-- HelixToolkit 3D viewport — live PCB model -->
+        <h:HelixViewport3D x:Name="Viewport"
+                           Background="#FF111111"
+                           ShowCoordinateSystem="True"
+                           ShowFrameRate="False"
+                           ZoomExtentsWhenLoaded="True">
+
+            <h:HelixViewport3D.Camera>
+                <PerspectiveCamera Position="50,50,80"
+                                   LookDirection="-50,-50,-80"
+                                   UpDirection="0,0,1"
+                                   FieldOfView="45"/>
+            </h:HelixViewport3D.Camera>
+
+            <!-- Lighting -->
+            <h:SunLight/>
+
+            <!-- PCB board model added programmatically -->
+        </h:HelixViewport3D>
+    </Grid>
+</UserControl>

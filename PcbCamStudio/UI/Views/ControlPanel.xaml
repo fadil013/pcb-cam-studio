@@ -1,0 +1,12 @@
+<UserControl x:Class="PcbCamStudio.UI.Views.ControlPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Machine control panel — binds to MainViewModel -->
+    <StackPanel Background="#FF252526" Width="260">
+
+        <!-- Connection, Jog, Actions all live here -->
+        <!-- Content injected from MainWindow right panel -->
+
+    </StackPanel>
+</UserControl>
